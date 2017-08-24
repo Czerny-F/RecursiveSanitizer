@@ -1,0 +1,29 @@
+{
+    "name": "czerny-f/recursive-sanitizer",
+    "description": "Sanitize an array recursively with injected function",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Czerny",
+            "email": "dummy00.cz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phing/phing": "^2.16",
+        "phpunit/phpunit": "^6.3",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Czerny\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Czerny\\": "tests/"
+        }
+    }
+}

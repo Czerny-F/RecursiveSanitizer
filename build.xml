@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project name="RecursiveSanitizer" default="build">
   <target name="phpunit">
-    <exec dir="." executable="phpunit" failonerror="true">
+    <exec dir="." executable="vendor/bin/phpunit">
       <arg line="--coverage-clover build/logs/clover.xml" />
     </exec>
   </target>

@@ -3,8 +3,8 @@ php:
   - 5.4
   - 7.1
 before_script:
-  - composer require satooshi/php-coveralls --dev
+  - composer install --dev
 script:
-  - phpunit --coverage-clover build/logs/clover.xml
+  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 after_script:
   - php vendor/bin/coveralls -v
