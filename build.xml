@@ -3,7 +3,7 @@
   <autoloader autoloaderpath="vendor/autoload.php" />
   <php expression="include('vendor/autoload.php')" />
   <target name="phpunit">
-    <phpunit></phpunit>
+    <phpunit pharlocation="vendor/bin/phpunit"></phpunit>
   </target>
   <target name="build" depends="phpunit" />
 </project>
