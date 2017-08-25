@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project name="RecursiveSanitizer" default="build">
   <autoloader autoloaderpath="vendor/autoload.php" />
+  <php expression="include('vendor/autoload.php')" />
   <target name="phpunit">
     <phpunit></phpunit>
   </target>
