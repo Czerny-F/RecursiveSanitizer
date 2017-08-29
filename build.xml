@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project name="RecursiveSanitizer" default="build">
-  <property name="baseDir" value="." override="true" />
-  <autoloader autoloaderpath="${baseDir}/vendor/autoload.php" />
-  <php expression="include('${baseDir}/vendor/autoload.php')" />
+  <autoloader autoloaderpath="vendor/autoload.php" />
   <target name="phpunit">
-    <phpunit pharlocation="${baseDir}/vendor/bin/phpunit"></phpunit>
+    <exec command="vendor/bin/phpunit" checkreturn="true" logoutput="true" passthru="true" />
+    <!--phpunit pharlocation="vendor/bin/phpunit" /-->
   </target>
   <target name="build" depends="phpunit" />
 </project>
