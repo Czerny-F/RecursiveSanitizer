@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/php:7.1.8-browsers
-      # - image: circleci/php:7.0.22-browsers
+      - image: circleci/php:7.0.22-browsers
 
     working_directory: ~/repo
 
@@ -25,4 +25,4 @@ jobs:
 
       # run tests!
       - run: vendor/bin/phpunit --coverage-clover build/logs/clover.xml
-      - run: vendor/bin/coveralls -v
+      # - run: vendor/bin/coveralls -v
